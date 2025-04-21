@@ -1,0 +1,281 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+  color: #f0f0f0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  color: #00ffff;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 40px;
+  padding: 100px 10%;
+  background: #1c1c1c;
+}
+
+/* about start */
+.about-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-section h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #00ffff; /* Highlighted heading */
+}
+
+.about-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+/* about end */
+
+.experience-section {
+
+  color: #ffffff;
+  padding: 80px 60px;
+}
+
+.experience-section h2 {
+  font-size: 32px;
+  color: #00ffff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-card {
+  
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
+}
+
+.experience-card h3 {
+  font-size: 22px;
+  color: #00ffff;
+  margin-bottom: 5px;
+}
+
+.experience-card h4 {
+  font-size: 16px;
+  color: #bbbbbb;
+  margin-bottom: 15px;
+}
+
+.experience-card p {
+  font-size: 15px;
+  color: #d0d0d0;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+.education-section h2 {
+  
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.edu-heading {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.edu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.edu-card {
+  
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.2);
+}
+
+.edu-card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.edu-card h4 span {
+  font-weight: normal;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.degree {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.details {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  .edu-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skills-list li {
+  list-style: none;
+  background: #292929;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #00ffff;
+}
+
+/* Projects */
+.project-card {
+  background: #252525;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Contact */
+.contact-section {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Animations */
+.animate-left,
+.animate-right,
+.animate-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.animate-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* control spacing between icons */
+  margin-top: 10px;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+}
+
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px; /* optional - if you want rounded corners */
+  transition: transform 0.2s ease;
+}
+.social-links img:hover {
+  transform: scale(1.1);
+}
